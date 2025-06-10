@@ -28,9 +28,9 @@ def main():
         screen.blit(bg_img, [-tmr+3200, 0])
         key_lst = pg.key.get_pressed()
         if key_lst[pg.K_UP]:
-            coor = [0,-1]
+            coor = [-1,-1]
         elif key_lst[pg.K_DOWN]:
-            coor = [0,1]
+            coor = [-1,1]
         elif key_lst[pg.K_LEFT]:
             coor = [-1,0]
         elif key_lst[pg.K_RIGHT]:
