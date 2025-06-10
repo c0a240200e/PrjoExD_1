@@ -26,6 +26,7 @@ def main():
         screen.blit(bg_img2, [-tmr+1600, 0])
         screen.blit(bg_img, [-tmr+3200, 0])
         key_lst = pg.key.get_pressed()
+        kt_rct.move_ip((-1,0))
         if key_lst[pg.K_UP]:
             kt_rct.move_ip((0,-1))
         elif key_lst[pg.K_DOWN]:
@@ -34,6 +35,7 @@ def main():
             kt_rct.move_ip((-1,0))
         elif key_lst[pg.K_RIGHT]:
             kt_rct.move_ip((1,0))
+            
         screen.blit(kt_img, kt_rct)
         if tmr >3199:
             tmr = 0
