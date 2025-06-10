@@ -22,7 +22,10 @@ def main():
         
         screen.blit(bg_img, [-tmr, 0])
         screen.blit(bg_img2, [-tmr+1600, 0])
+        screen.blit(bg_img, [-tmr+3200, 0])
         screen.blit(kt_img, [300,200])
+        if tmr >3199:
+            tmr = 0
         pg.display.update()
         tmr += 1        
         clock.tick(200)
